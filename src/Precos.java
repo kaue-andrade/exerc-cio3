@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class questao1 {
+public class Precos {
     public static void main(String[] args) {
 
         int contador = 0;
