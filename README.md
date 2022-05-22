@@ -1,7 +1,7 @@
 # Exercício 3
 
 
-1. Faça um programa em Java para ler o preço de um produto em cada um dos meses do ano e depois imprimir a média do valor do produto no ano. Utilize Lists e ArrayLists. ❌
+1. Faça um programa em Java para ler o preço de um produto em cada um dos meses do ano e depois imprimir a média do valor do produto no ano. Utilize Lists e ArrayLists. ✔️
 
 2. Faça um programa em Java que leia 10 nomes de marcas de tênis e imprima cada uma delas. Utilize Sets e HashSets. ❌
 
