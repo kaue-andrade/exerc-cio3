@@ -9,4 +9,4 @@
 
 4. Você foi contratado para fazer o sistema de cadastro de alunos do IFBA. Modele a classe Aluno com os atributos: nome, cpf, dataNascimento; leia do teclado os dados de diversos alunos (parar quando o usuário digitar -1 no nome); armazenando-os em um uma lista; em seguida leia um cpf do teclado e imprima na tela o nome e a data de nascimento do aluno com o CPF digitado.
 
-![](https://miro.medium.com/max/1200/1*GCu4cNWIU1ElDbY7d4ycZw.png)
+![](https://portal.ifba.edu.br/euclides-da-cunha/imagens-campus-euclides/2018/euclidesdacunha.png/@@images/29b9d5f7-2757-41e3-a684-96c7b52337b3.png)
