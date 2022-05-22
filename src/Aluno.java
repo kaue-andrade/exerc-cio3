@@ -15,9 +15,9 @@ public class Aluno {
 
         ArrayList<Integer> Aluno = new ArrayList<>();
 
-        while (validador != "-1"){
+        /*while (validador != "-1"){
             System.out.println("A");
 
-        }
+        }*/
     }
 }
