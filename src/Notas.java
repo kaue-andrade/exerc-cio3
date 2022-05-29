@@ -2,21 +2,22 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Notas {
-    public static void main(String[] args) {
 
-        int contador = 1;
-        String cpf = "76460520356";
-        double nota = 0;
+    private int contador = 1;
+    private String cpf;
+    private double nota = 0;
+
+    public void notaAluno() {
 
         System.out.println("\nCPF sem pontos e sem traço!");
 
         Scanner ler = new Scanner(System.in);
 
-        HashMap<String, Double> notasCPF = new HashMap<String, Double>();
+        HashMap<String, Double> CPFnotas = new HashMap<String, Double>();
 
         System.out.println();
 
-        for (int i=1; i<=50; i++){
+        for (int i=1; i<=3; i++){
 
             System.out.print("CPF do aluno " + i + ": ");
             cpf = ler.next();
@@ -24,15 +25,41 @@ public class Notas {
             System.out.print("Nota do aluno " + i + ": ");
             nota = ler.nextDouble();
 
-            notasCPF.put(cpf, nota);
+            CPFnotas.put(cpf, nota);
 
             System.out.println();
 
         }
 
-        System.out.println(notasCPF);
+        System.out.println(CPFnotas);
 
-        System.out.println("\nNota do aluno com o CPF 764.605.203-56: " + notasCPF.get(cpf));
+        cpf = "76460520356";
 
+        System.out.println("\nNota do aluno com o CPF 764.605.203-56: " + CPFnotas.get(cpf));
+
+    }
+
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
     }
 }

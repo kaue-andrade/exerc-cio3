@@ -2,13 +2,14 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class Marcas {
-    public static void main(String[] args) {
 
-        System.out.println("\nUtilizando HashSet não há repitação de elementos e os elementos não precisam necessariamente estare em uma ordem.");
+    private int contador = 0;
+    private String marca;
+    private int numMarca = 1;
 
-        int contador = 0;
-        String marca;
-        int numMarca = 1;
+    public void marcasResultado() {
+
+        System.out.println("\nUtilizando HashSet não há repitação de elementos e os elementos não precisam necessariamente estar em uma ordem.");
 
         Scanner ler = new Scanner(System.in);
 
@@ -28,5 +29,29 @@ public class Marcas {
 
         System.out.println("\nTodas as marcas: " + marcaSet);
 
+    }
+
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getNumMarca() {
+        return numMarca;
+    }
+
+    public void setNumMarca(int numMarca) {
+        this.numMarca = numMarca;
     }
 }
