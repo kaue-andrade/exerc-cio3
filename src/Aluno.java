@@ -64,4 +64,76 @@ public class Aluno {
         System.out.println("\nNota do aluno com o CPF " + cpf + ": " + AlunoNota.get(cpf));
 
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(int aluno) {
+        this.aluno = aluno;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public int getValidador() {
+        return validador;
+    }
+
+    public void setValidador(int validador) {
+        this.validador = validador;
+    }
+
+    public int getValidadorif() {
+        return validadorif;
+    }
+
+    public void setValidadorif(int validadorif) {
+        this.validadorif = validadorif;
+    }
+
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
+    }
+
+    public String getNota() {
+        return nota;
+    }
+
+    public void setNota(String nota) {
+        this.nota = nota;
+    }
+
+    public String getTemp() {
+        return temp;
+    }
+
+    public void setTemp(String temp) {
+        this.temp = temp;
+    }
 }
