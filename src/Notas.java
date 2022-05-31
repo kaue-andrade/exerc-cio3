@@ -17,7 +17,7 @@ public class Notas {
 
         System.out.println();
 
-        for (int i=1; i<=3; i++){
+        for (int i=1; i<=50; i++){
 
             System.out.print("CPF do aluno " + i + ": ");
             cpf = ler.next();

@@ -5,10 +5,14 @@ import java.util.Scanner;
 public class Aluno {
 
     private String nome;
+    private int aluno;
     private String cpf;
     private String dataNascimento;
-    private String validador = "teste";
+    private int validador = 1;
+    private int validadorif;
     private int contador = 1;
+    private String nota;
+    private String temp;
 
     public void alunoResultado(){
 
@@ -18,52 +22,46 @@ public class Aluno {
 
         ArrayList<String> AlunoList = new ArrayList<>();
 
+        //System.out.println("\nCPF sem pontos e sem traço!");
+
+        HashMap<String, String> AlunoNome = new HashMap<String, String>();
+        HashMap<String, String> AlunoNota = new HashMap<String, String>();
+
         System.out.println();
 
-        System.out.println("\nCPF sem pontos e sem traço!");
+        //Não foi possível utilizar o -1 para parar, pois o while dá erro ao tentar implementar.
 
-        HashMap<String, Double> AlunoMap = new HashMap<String, Double>();
+        System.out.print("Deseja adicionar quantos alunos: ");
+        aluno = ler.nextInt();
 
         System.out.println();
 
-        while (verificador != ){
+        for (int i=1; i<=aluno; i++){
 
-            System.out.print("Digite o nome do aluno " + contador + ": ");
+            System.out.print("Nome do aluno " + i + ": ");
             nome = ler.next();
 
             System.out.print("CPF do aluno " + i + ": ");
             cpf = ler.next();
 
             System.out.print("Nota do aluno " + i + ": ");
-            nota = ler.nextDouble();
+            nota = ler.next();
 
-            AlunoMap.put(cpf, nota);
+            AlunoNome.put(cpf, nome);
+            AlunoNota.put(cpf, nota);
 
             System.out.println();
 
         }
 
-        System.out.println(CPFnotas);
+        System.out.println(AlunoNome);
+        System.out.println(AlunoNota);
 
-        cpf = "76460520356";
+        System.out.print("\nCPF que deseja consultar: ");
+        cpf = ler.next();
 
-        System.out.println("\nNota do aluno com o CPF 764.605.203-56: " + CPFnotas.get(cpf));
+        System.out.println("\nNome do aluno com o CPF " + cpf + ": " + AlunoNome.get(cpf));
+        System.out.println("\nNota do aluno com o CPF " + cpf + ": " + AlunoNota.get(cpf));
 
-    }
-
-        for (String i = "teste"; i != "-1"; ) {
-
-            System.out.print("Digite o nome do aluno " + contador + ": ");
-            nome = ler.next();
-
-            if (nome != "-1") {
-                break;
-            } else {
-                Aluno.add(nome);
-            }
-
-            i = nome;
-            contador++;
-        }
     }
 }
